@@ -85,3 +85,17 @@ due to these rules, some patterns can be extracted.
 an In-Order Traversal print out of a BST will always have the elements in ascending order.
 a Pre-Order Traversal print out of a BST is useful in recursively reconstructing a binary tree from a set of data values.
 a Post-Order Travsersal is useful when performing operations that depend on processing children before their parent, such as deleting nodes in a tree or evaluating expressions in a syntax tree. In post-order traversal, the left and right subtrees are visited before the root node, ensuring that any required operations on child nodes are completed before processing the parent.
+
+
+## Hash Table
+
+Hash tables are a data structure that provides efficient storage and retrieval of key-value pairs. They work by using a hash function to map keys to indices in an array. When a value is added to the hash table, the hash function is applied to the key to determine the index where the value should be stored. When a value is retrieved from the hash table, the hash function is again applied to the key to determine the index where the value is stored, and then the value can be retrieved from that location in the array.
+
+Creating a hash table involves defining the hash function and the underlying array. The size of the array is typically chosen based on the expected number of key-value pairs and the desired level of performance. If the array is too small, it can result in a high number of collisions (when multiple keys map to the same index), while if the array is too large, it can result in wasted memory.
+
+When multiple keys map to the same index, a collision occurs. There are various techniques for resolving collisions, such as chaining (where each index in the array stores a linked list of key-value pairs), open addressing (where the key-value pair is stored in the next available index), or probing (where a search is conducted for the next available index).
+
+One advantage of hash tables is that they provide constant time (O(1)) access to values, regardless of the size of the data set. However, they also have some disadvantages, such as the need for a good hash function, the potential for collisions, and the difficulty of iterating over all the key-value pairs in the hash table in a predictable order.
+
+In addition to storing and retrieving values, hash tables can also be used for other purposes, such as implementing sets or counting occurrences of values.
+
