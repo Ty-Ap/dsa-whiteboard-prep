@@ -77,15 +77,14 @@ ex.
 Binary search trees are a subtype of binary trees, which follow three rules;
 
   1. the values of the left children of the parent are less than the parent node value.
-  2. the values of the right children of the parent node are greater than the parent node value. 
+  2. the values of the right children of the parent node are greater than the parent node value.
   3. both left and right subtrees are also binary search trees.
 
-due to these rules, some patterns can be extracted. 
+due to these rules, some patterns can be extracted.
 
 an In-Order Traversal print out of a BST will always have the elements in ascending order.
 a Pre-Order Traversal print out of a BST is useful in recursively reconstructing a binary tree from a set of data values.
 a Post-Order Travsersal is useful when performing operations that depend on processing children before their parent, such as deleting nodes in a tree or evaluating expressions in a syntax tree. In post-order traversal, the left and right subtrees are visited before the root node, ensuring that any required operations on child nodes are completed before processing the parent.
-
 
 ## Hash Table
 
@@ -99,3 +98,33 @@ One advantage of hash tables is that they provide constant time (O(1)) access to
 
 In addition to storing and retrieving values, hash tables can also be used for other purposes, such as implementing sets or counting occurrences of values.
 
+## Checklist
+
+1. Define the problem:
+
+- copy problem statement verbatim
+- highlight, define, clarify key words, phrases, reframe ideas.
+
+2. Identify test cases:
+
+- ask for sample case
+- create 2 or 3 new test cases including empty struct. (remember to use the simplest interesting example for whiteboard to keep things easy)
+
+3. Visualize:
+
+- draw input at the top of the vis, and output at bottom.
+- work towards middle from both ends and illustrate each step.
+
+4. Plan the algorithm:
+
+- identify intermediate data structures from vis.
+- describe in plain language the steps the vis describes
+
+5. Code:
+
+- write code to implement those steps.
+
+6. Verify:
+
+- Use test case to visually walk through code step by step recording the changes in values.
+- provide big O analysis,  justifying time and space complexity.
